@@ -91,3 +91,13 @@ button:hover {
     color: rgba(31, 30, 30, 0.795);
 }
 
+.formulario {
+    position:fixed; 
+    width: 600px;
+    height: 100%;
+    z-index: 3;
+    left: -50%;
+    top: 15px;
+    transition: 1.2s; /*TRANSIÇÃO - Faz a movimentação do item de um ponto para outro*/
+}
+
