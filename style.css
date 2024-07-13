@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0; /* espaçamento externo */
+    padding: 0; /* espaçamento interno */
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* O asterísco significa TUDO, aplicando qualquer coisa no * vai ser aplicado na estilização toda */
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+video, .img-tesla {
+    width: 100%;/* LARGURA */
+    height: 100%;/* ALTURA */
+    position:absolute ; /* POSICIONA O ITEM NA POSIÇÃO EXATA QUE DESEJO */
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+h1 {
+    color: beige;
+}
+
+
+button {
+    background-color: rgba(34, 34, 34, 0.8);
+    color: white;
+    padding: 7px 80px;
+    border-radius: 5px; /* Arredonda a borda do botão */
+    border: none; /* Remove a bora do botão */
+
+}
+button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.teste-drive {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.705);
+}
+
+.logo {
+    filter: brightness(100);
+    position: fixed;
+    width: 150px;
+}
+
+
+.info-carro {
+    margin-top: 80px; /* Distancia meu item do topo*/
+    text-align: center; /* Alinha meu item ao centro*/
+}
+
+.parcelas {
+    color: white;
+}
+
+.item {
+    display: flex; /* Habilita algumas propriedades css*/
+    justify-content: space-between; /* Cria um espaçamento entre os itens */
+    flex-direction: column; /* Alinha os itens em coluna um de baixo do outro */
+
+    position: relative;
+    width: 100vw; /*Tela toda -  */
+    height: 100vh; /*Tela toda- */
+    scroll-snap-align: start;
+}
+
+.rodape {
+    text-align: center; /* Alinha meu rodapé ao centro*/
+}
+
+.texto-rodape{
+    color: beige;
+    margin-top: 7px;
+    margin-bottom: 17px;
+}
+
+.model-3, .parcelas-2{
+    color: rgba(209, 151, 151, 0.795);
+}
+
+.model-x, .parcelas-3 {
+    color: rgba(31, 30, 30, 0.795);
+}
+
